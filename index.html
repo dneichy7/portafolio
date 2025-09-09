@@ -2,14 +2,133 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Portafolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio - Daneisy Bueno González</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #4fa3f7;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hola, soy [Tu Nombre]</h1>
-  <p>Desarrollador web | Proyectos en GitHub</p>
-  <ul>
-    <li><a href="https://github.com/tuusuario/proyecto1">Proyecto 1</a></li>
-    <li><a href="https://github.com/tuusuario/proyecto2">Proyecto 2</a></li>
-  </ul>
+  <header>
+    <h1>Hola, soy Daneisy Bueno González</h1>
+    <p>Desarrollador Web 🚀</p>
+    <nav>
+      <a href="#about">Sobre mí</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy graduada de la Universidad de las Ciencias Informáticas en la Habana Cuba desde el año 2012. Como desarrolladora de páginas webs he trabajado para el sector estatal y no estatal, fuera y dentro del país.
+      Me gusta aprender nuevas tecnologías y ponerlas en práctica para resolver problemas reales. Conozco mis debilidades pero también mis fortalezas, me gusta trabajar en equipo, contar con un liderazgo que practique la empatía y la comunicación. Todo lo cual influye en los productos que se entregan a los clientes.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Proyecto 1</h3>
+        <p>Descripción breve de tu proyecto.</p>
+        <a href="https://github.com/dneichy7/portafolio" target="_blank">Ver en GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Proyecto 2</h3>
+        <p>Descripción breve de otro proyecto.</p>
+        <a href="#" target="_blank">Ver en GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>📧 Email: <a href="mailto:aprendizdesierva@gmail.com">aprendizdesierva@gmail.com</a></p>
+    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/daneisy-bueno-gonz%C3%A1lez-235b38260/" target="_blank">linkedin.com/in/daneisy-bueno-gonzález-235b38260</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Daneisy Bueno González - Mi Portafolio</p>
+  </footer>
 </body>
 </html>
+
